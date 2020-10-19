@@ -45,16 +45,16 @@ show master status;
 
 stop slave;
 
-CHANGE MASTER TO
-  MASTER_HOST='your ip',
-  MASTER_USER='sync',
-  MASTER_PASSWORD='passwd',
-  MASTER_LOG_FILE='mysql-bin.000166',
-  MASTER_LOG_POS=659;
+CHANGE MASTER TO  
+  MASTER_HOST='your ip',  
+  MASTER_USER='sync',  
+  MASTER_PASSWORD='passwd',  
+  MASTER_LOG_FILE='mysql-bin.000166',  
+  MASTER_LOG_POS=659;  
   
  start slave;
  
- show slave status \G
+ show slave status \G  
  
  ==> check if sync ok??
  
