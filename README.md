@@ -34,9 +34,11 @@ binlog_ignore_db=sys
 
 # Master
 create user 'sync'@'%' identified by 'passwd';
+
 GRANT REPLICATION SLAVE ON *.* TO 'sync'@'%';
 
 show master status;
+
 ==> check MASTER_LOG_POS and MASTER_LOG_FILE for slave setting
 
 # Slave  
