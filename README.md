@@ -39,7 +39,7 @@ GRANT REPLICATION SLAVE ON *.* TO 'sync'@'%';
 show master status;
 ==> check MASTER_LOG_POS and MASTER_LOG_FILE for slave setting
 
-#Slave
+# Slave  
 
 stop slave;
 
